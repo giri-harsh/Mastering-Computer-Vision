@@ -17,10 +17,10 @@ def draw(event, x, y, flags, params):
         iy = y 
     elif event ==0:
         if flag == True:
-            cv2.rectangle(img,pt1=(ix,iy),pt2=(x,y),color=(0,255,0,255),thickness=-1)
+            cv2.rectangle(img,pt1=(ix,iy),pt2=(x,y),color=(0,255,255),thickness=-1)
     elif event ==4:
         flag = False
-        cv2.rectangle(img,pt1=(ix,iy),pt2=(x,y),color=(0,255,0,255),thickness=-1)
+        cv2.rectangle(img,pt1=(ix,iy),pt2=(x,y),color=(0,255,255),thickness=-1)
 
 cv2.namedWindow('window')
 cv2.setMouseCallback('window', draw)
